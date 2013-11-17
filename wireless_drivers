@@ -1,0 +1,13 @@
+grep Broadcom
+
+yum install b43-fwcutter
+
+wget http://downloads.openwrt.org/sources/broadcom-wl-4.150.10.5.tar.bz2
+
+tar xjf broadcom-wl-4.150.10.5.tar.bz2
+
+cd broadcom-wl-4.150.10.5/driver
+
+b43-fwcutter -w /lib/firmware/ wl_apsta_mimo.o
+
+modprobe -r b43; modprobe b43
