@@ -1,0 +1,2 @@
+sudo apt-get install php-apc
+sudo /etc/init.d/apache2 restart
