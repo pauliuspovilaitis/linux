@@ -1,0 +1,34 @@
+//virtual host configuration on linux+apache2
+//switch on rewrite mode in apache2
+a2enmode rewrite
+
+//create dir for webpage
+mkdir /var/www/zend
+
+//create index page
+gedit /var/www/zend/index.php
+
+//edit hosts file
+gedit /etc/hosts
+
+//insert your site (use tab)
+127.0.0.1 zend
+
+//create config for apache
+
+gedit /etc/apache2/sites-available/zend.conf
+
+<VirtualHost *:80>
+DocumentRoot /var/www/zend/
+ServerName zend
+ServerAlias zend
+</VirtualHost>
+
+//enable this
+a2ensite zend
+
+//reload apache
+service apache2 reload
+
+
+
