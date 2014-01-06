@@ -1,6 +1,6 @@
 //virtual host configuration on linux+apache2
 //switch on rewrite mode in apache2
-a2enmode rewrite
+a2enmod rewrite
 
 //create dir for webpage
 mkdir /var/www/zend
