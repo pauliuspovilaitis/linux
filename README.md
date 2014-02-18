@@ -1,4 +1,4 @@
-linux
+LAMP
 =====
 
-LAMP solutions and other configuration things related to linux environment. 
+LAMP configuration and other configuration things related to linux environment. 
